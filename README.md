@@ -87,9 +87,9 @@ pytest
 ## CI/CD Pipeline
 
 The GitHub Actions workflow (`.github/workflows/main.yml`) will automatically:
-- Set up Python 3.10 and webserver on Docker Containers
+- Set up Python 3.10, web server and nginx Docker Containers
 - Install dependencies
-- Use Flake8 for Python syntax linting to avoid detect syntax errors and other suggestions
+- Use Flake8 for Python syntax linting to detect syntax errors and other suggestions
 - Build the images and deploy to Github Container Registry
 - Pull images from container registry and deploy to server
 
@@ -131,8 +131,6 @@ curl "http://localhost:8000/api/v1/products/?search=Maltina"
 
 ## Future Improvements
 
-1. Add user authentication (JWT or OAuth2)
-2. Implement rate limiting
-3. Add more advanced search (full-text) as well as other filter params
-4. Add pagination to list endpoints
-6. Extend from just basic catalog
+1. Add more filter params
+2. Add pagination to list endpoints
+3. Extend from just basic catalog to more features
