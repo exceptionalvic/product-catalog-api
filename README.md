@@ -76,11 +76,6 @@ Swagger documentation is available at:
 
 Run the test suite with:
 ```bash
-python manage.py test
-```
-
-Or with pytest:
-```bash
 pytest
 ```
 
